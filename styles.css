@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+   html {
+      font-family: "Montserrat", serif;
+   }
+}
+
+@layer components {
+   .underline-primary {
+      @apply before:content-[''] before:block before:w-[65px] before:h-[1px] before:absolute before:top-[110px] before:left-[] before:bg-black
+   }
+   .container {
+      @apply max-w-[1140px] m-auto
+   }
+   .title-primary {
+      @apply font-semibold text-7xl
+   }
+}
